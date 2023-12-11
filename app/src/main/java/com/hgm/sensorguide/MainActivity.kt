@@ -19,10 +19,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hgm.sensorguide.ui.theme.SensorGuideTheme
 import dagger.hilt.android.AndroidEntryPoint
 
-/**
- *    传感器完整使用指南
- *    视频：https://www.youtube.com/watch?v=IU-EAtITRRM
- **/
+
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
       override fun onCreate(savedInstanceState: Bundle?) {
