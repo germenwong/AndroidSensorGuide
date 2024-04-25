@@ -5,6 +5,7 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import android.util.Log
 
 /**
  * @author：HGM
@@ -30,6 +31,7 @@ abstract class AndroidSensor(
       // 开始监听
       override fun startListening() {
             if (!hasSensorFeature) {
+                  Log.e("TAG", "onSensorChanged: 设备不支持该传感器" )
                   return
             }
             if (!::sensorManager.isInitialized && sensor == null) {
